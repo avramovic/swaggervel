@@ -25,13 +25,13 @@
     },
     "autoload": {
         "psr-0": {
-            "Dagbouj-Hatem\\Swaggervel": "src/"
+            "Appointer\\Swaggervel": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Dagbouj-Hatem\\Swaggervel\\SwaggervelServiceProvider"
+                "Appointer\\Swaggervel\\SwaggervelServiceProvider"
             ]
         }
     }
