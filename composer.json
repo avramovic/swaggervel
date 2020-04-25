@@ -1,5 +1,5 @@
 {
-    "name": "Dagbouj-Hatem/swaggervel",
+    "name": "dagbouj-hatem/swaggervel",
     "description": "A great way to integrate Swagger into Laravel",
     "keywords": ["laravel", "swagger", "documentation", "api"],
     "license": "MIT",
