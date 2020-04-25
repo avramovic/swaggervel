@@ -34,5 +34,6 @@
                 "Appointer\\Swaggervel\\SwaggervelServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
