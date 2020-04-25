@@ -1,9 +1,13 @@
 {
-    "name": "appointer/swaggervel",
+    "name": "Dagbouj-Hatem/swaggervel",
     "description": "A great way to integrate Swagger into Laravel",
     "keywords": ["laravel", "swagger", "documentation", "api"],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Dagbouj Hatem",
+            "email": "dagboujhatem@gmail.com"
+        },  
         {
             "name": "jlapp",
             "email": "jordan@jordanlapp.com"
@@ -21,13 +25,13 @@
     },
     "autoload": {
         "psr-0": {
-            "Appointer\\Swaggervel": "src/"
+            "Dagbouj-Hatem\\Swaggervel": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Appointer\\Swaggervel\\SwaggervelServiceProvider"
+                "Dagbouj-Hatem\\Swaggervel\\SwaggervelServiceProvider"
             ]
         }
     }
