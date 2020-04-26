@@ -7,10 +7,22 @@ When you run your app in debug mode, Swaggervel will scan your app folder (or an
 ### 1- Add Package
 - Execute `composer require dagbouj-hatem/swaggervel --dev` within your laravel project root directory.
 
-### 2- Service Provider & Facade (Optional on Laravel 5.5)
-- Add `Appointer\Swaggervel\SwaggervelServiceProvider::class` to your providers array in `app/config/app.php` above your route provider, to avoid any catch-all routes
+### 2- Add Service Provider (This step is optional if you are using Laravel 5.5+)
+- Add `Appointer\Swaggervel\SwaggervelServiceProvider::class` to your providers array in `app/config/app.php` above your route provider, to avoid any catch-all routes :
+```
+providers' => [
+    // ...
+    Yajra\DataTables\DataTablesServiceProvider::class,
+],
+```
+
+### 3- publish the public folder (Optional)
 - Run `php artisan vendor:publish --tag=public` to push swagger-ui to your public folder (can be found in public/vendor/swaggervel).
+
+### 4- publish the config folder (Optional)
 - Optionally run `php artisan vendor:publish --tag=config` to push the swaggervel default config into your application's config directory.
+
+### 5- publish the view folder (Optional)
 - Optionally run `php artisan vendor:publish --tag=views` to push the swaggervel index view file into `resources/views/vendor/swaggervel`.
 
 ## Examples (when using the default configuration)
@@ -24,7 +36,7 @@ All options are well commented within the swaggervel.php config file.
 The actual Swagger spec is beyond the scope of this package. All Swaggervel does is package up swagger-php and swagger-ui in a Laravel-friendly fashion, and tries to make it easy to serve. For info on how to use swagger-php [look here](http://zircote.com/swagger-php/). For good examples of swagger-php in action [look here](https://github.com/zircote/swagger-php/tree/master/Examples).
 
 ## Further Notes
-This package is a fork of [slampenny/Swaggervel](https://github.com/slampenny/Swaggervel), as it is no longer maintained.
+This package is a fork of [Appointer/Swaggervel](https://github.com/Appointer/Swaggervel), as it is no longer maintained.
 
 ## TODO
 - the handling of the /doc call is still really inconsistent, as you cannot change the file name (api-docs.json), but are able to change the file you acces when using the /doc route.
