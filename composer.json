@@ -1,6 +1,6 @@
 {
-    "name": "dagbouj-hatem/swaggervel",
-    "description": "A great way to integrate Swagger into Laravel",
+    "name": "avram/swaggervel",
+    "description": "A great way to integrate Swagger into Laravel 8+",
     "keywords": ["laravel", "swagger", "documentation", "api"],
     "license": "MIT",
     "authors": [
