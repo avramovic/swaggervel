@@ -4,10 +4,14 @@
     "keywords": ["laravel", "swagger", "documentation", "api"],
     "license": "MIT",
     "authors": [
+	{
+	    "name": "Nemanja Avramovic",
+	    "email": "avramyu@gmail.com"
+	},
         {
             "name": "Dagbouj Hatem",
             "email": "dagboujhatem@gmail.com"
-        },  
+        },
         {
             "name": "jlapp",
             "email": "jordan@jordanlapp.com"
@@ -19,7 +23,7 @@
     ],
     "require": {
         "php": ">=5.6.0",
-        "illuminate/support": "^5.0|^6.0|^7.0",
+        "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
         "swagger-api/swagger-ui": "^3.1",
         "zircote/swagger-php": "^2.0"
     },
